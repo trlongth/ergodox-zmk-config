@@ -31,7 +31,7 @@
             key-positions = <37 38>;
             bindings = <&kp BKSP>;
         };
-        combo_bksp {
+        combo_del {
             timeout-ms = <20>;
             key-positions = <38 39>;
             bindings = <&kp DEL>;
