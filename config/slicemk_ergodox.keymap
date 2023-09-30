@@ -8,37 +8,37 @@
         compatible = "zmk,combos";
         combo_tab {
             timeout-ms = <20>;
-            key-positions = <16 17>;
+            key-positions = <32 33>;
             bindings = <&kp TAB>;
         };
         combo_esc {
             timeout-ms = <20>;
-            key-positions = <32 33>;
+            key-positions = <31 32 33>;
             bindings = <&kp ESC>;
         };
         combo_lgui {
             timeout-ms = <20>;
-            key-positions = <31 32 33>;
+            key-positions = <42 43 44>;
             bindings = <&kp LGUI>;
         };
         combo_ret {
             timeout-ms = <20>;
-            key-positions = <36 37>;
+            key-positions = <36 37 38>;
             bindings = <&kp RET>;
         };
         combo_bksp {
             timeout-ms = <20>;
-            key-positions = <37 38>;
+            key-positions = <36 37>;
             bindings = <&kp BKSP>;
         };
         combo_del {
             timeout-ms = <20>;
-            key-positions = <38 39>;
+            key-positions = <37 38>;
             bindings = <&kp DEL>;
         };
         combo_rgui {
             timeout-ms = <20>;
-            key-positions = <36 37 38>;
+            key-positions = <51 52 53>;
             bindings = <&kp RGUI>;
         };
         combo_lctl {
