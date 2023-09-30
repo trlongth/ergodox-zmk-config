@@ -6,17 +6,17 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_ret {
+        combo_tab {
             timeout-ms = <20>;
             key-positions = <31 32>;
             bindings = <&kp TAB>;
         };
-        combo_bksp {
+        combo_esc {
             timeout-ms = <20>;
             key-positions = <32 33>;
             bindings = <&kp ESC>;
         };
-        combo_bksp {
+        combo_lgui {
             timeout-ms = <20>;
             key-positions = <31 32 33>;
             bindings = <&kp LGUI>;
@@ -31,27 +31,27 @@
             key-positions = <37 38>;
             bindings = <&kp BKSP>;
         };
-        combo_bksp {
+        combo_rgui {
             timeout-ms = <20>;
             key-positions = <36 37 38>;
             bindings = <&kp RGUI>;
         };
-        combo_bksp {
+        combo_lctl {
             timeout-ms = <20>;
             key-positions = <43 44>;
             bindings = <&kp LCTL>;
         };
-        combo_bksp {
+        combo_lalt {
             timeout-ms = <20>;
             key-positions = <44 45>;
             bindings = <&kp LALT>;
         };
-        combo_bksp {
+        combo_ralt {
             timeout-ms = <20>;
             key-positions = <50 51>;
             bindings = <&kp RALT>;
         };
-        combo_bksp {
+        combo_rctl {
             timeout-ms = <20>;
             key-positions = <51 52>;
             bindings = <&kp RCTL>;
