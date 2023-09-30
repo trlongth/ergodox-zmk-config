@@ -7,12 +7,12 @@
     combos {
         compatible = "zmk,combos";
         combo_ret {
-            timeout-ms = <25>;
+            timeout-ms = <15>;
             key-positions = <36 37>;
             bindings = <&kp RET>;
         };
         combo_bksp {
-            timeout-ms = <25>;
+            timeout-ms = <15>;
             key-positions = <37 38>;
             bindings = <&kp BKSP>;
         };
