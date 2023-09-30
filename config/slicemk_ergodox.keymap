@@ -38,14 +38,14 @@
 		layer_2 {
 			bindings = <
 				&bootloader
-				&trans &trans    &trans   &trans    &trans    &trans    &trans &trans &trans    &trans   &trans   &trans   &trans   &trans
-				&trans &kp CARET &kp AMPS &kp STAR  &kp LPAR  &kp RPAR  &trans &trans &trans    &kp LBKT &kp RBKT &kp LBRC &kp RBRC &trans
-				&trans &kp EXCL  &kp AT   &kp POUND &kp DLLR  &kp PRCNT               &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &trans
-				&trans &LS(TAB)  &LS(ESC) &kp TILD  &kp COLON &kp PIPE  &trans &trans &kp QMARK &kp DQT  &trans   &trans   &trans   &trans
-				&trans &trans    &trans   &trans    &trans                                      &trans   &trans   &trans   &trans   &trans
-				                                              &trans    &trans &trans &trans
-				                                    &trans    &trans    &trans &trans &trans    &trans
-				                                                        &trans &trans
+				&trans &trans      &trans      &trans    &trans    &trans    &trans &trans &trans    &trans   &trans   &trans   &trans   &trans
+				&trans &kp CARET   &kp AMPS    &kp STAR  &kp LPAR  &kp RPAR  &trans &trans &trans    &kp LBKT &kp RBKT &kp LBRC &kp RBRC &trans
+				&trans &kp EXCL    &kp AT      &kp POUND &kp DLLR  &kp PRCNT               &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &trans
+				&trans &kp LS(TAB) &kp LS(ESC) &kp TILD  &kp COLON &kp PIPE  &trans &trans &kp QMARK &kp DQT  &trans   &trans   &trans   &trans
+				&trans &trans      &trans      &trans    &trans                                      &trans   &trans   &trans   &trans   &trans
+				                                                   &trans    &trans &trans &trans
+				                                         &trans    &trans    &trans &trans &trans    &trans
+				                                                             &trans &trans
 			>;
 		};
 
