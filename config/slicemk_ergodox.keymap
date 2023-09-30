@@ -8,7 +8,7 @@
         compatible = "zmk,combos";
         combo_tab {
             timeout-ms = <20>;
-            key-positions = <31 32>;
+            key-positions = <16 17>;
             bindings = <&kp TAB>;
         };
         combo_esc {
@@ -30,6 +30,11 @@
             timeout-ms = <20>;
             key-positions = <37 38>;
             bindings = <&kp BKSP>;
+        };
+        combo_bksp {
+            timeout-ms = <20>;
+            key-positions = <38 39>;
+            bindings = <&kp DEL>;
         };
         combo_rgui {
             timeout-ms = <20>;
