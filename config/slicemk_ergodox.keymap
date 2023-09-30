@@ -8,6 +8,21 @@
         compatible = "zmk,combos";
         combo_ret {
             timeout-ms = <20>;
+            key-positions = <31 32>;
+            bindings = <&kp TAB>;
+        };
+        combo_bksp {
+            timeout-ms = <20>;
+            key-positions = <32 33>;
+            bindings = <&kp ESC>;
+        };
+        combo_bksp {
+            timeout-ms = <20>;
+            key-positions = <31 32 33>;
+            bindings = <&kp LGUI>;
+        };
+        combo_ret {
+            timeout-ms = <20>;
             key-positions = <36 37>;
             bindings = <&kp RET>;
         };
@@ -15,6 +30,31 @@
             timeout-ms = <20>;
             key-positions = <37 38>;
             bindings = <&kp BKSP>;
+        };
+        combo_bksp {
+            timeout-ms = <20>;
+            key-positions = <36 37 38>;
+            bindings = <&kp RGUI>;
+        };
+        combo_bksp {
+            timeout-ms = <20>;
+            key-positions = <43 44>;
+            bindings = <&kp LCTL>;
+        };
+        combo_bksp {
+            timeout-ms = <20>;
+            key-positions = <44 45>;
+            bindings = <&kp LALT>;
+        };
+        combo_bksp {
+            timeout-ms = <20>;
+            key-positions = <50 51>;
+            bindings = <&kp RALT>;
+        };
+        combo_bksp {
+            timeout-ms = <20>;
+            key-positions = <51 52>;
+            bindings = <&kp RCTL>;
         };
     };
 };
