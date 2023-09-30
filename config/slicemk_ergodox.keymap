@@ -84,7 +84,7 @@
 				&kp TAB  &kp Q        &kp W        &kp E        &kp R           &kp T        &trans &trans          &kp PGUP &kp HOME &kp UARW &kp END  &none    &trans
 				&mo 3    &kp A        &kp S        &kp D        &kp F           &kp G                               &kp PGDN &kp LARW &kp DARW &kp RARW &none    &trans
 				&kp LSFT &kp Z        &kp X        &kp C        &kp V           &kp B        &trans &trans          &none    &none    &none    &none    &none    &trans
-				&kp LCTL &kp LGUI     &kp LGUI     &kp LALT     &mo LAYER_LOWER                                              &mo 2    &kp LARW &kp DARW &kp UARW &kp RARW
+				&kp LCTL &kp LGUI     &kp LGUI     &kp LALT     &mo 1                                               &mo 2    &kp LARW &kp DARW &kp UARW &kp RARW
 				                                                                &none        &none  &none           &tog 5
 				                                                &kp SPC         &kp LCTL     &none  &none           &mo 3    &kp SPC
 				                                                                             &mo 6  &mo 7
