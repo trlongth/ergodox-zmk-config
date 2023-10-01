@@ -86,7 +86,7 @@
             key-positions = <50 51>;
             bindings = <&kp RGUI>;
         };
-        combo_rtab {
+        combo_rtab_rgui {
             timeout-ms = <20>;
             key-positions = <49 50 51>;
             bindings = <&kp TAB>;
