@@ -6,39 +6,39 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_tab {
-            timeout-ms = <20>;
-            key-positions = <32 33>;
-            bindings = <&kp TAB>;
-        };
         combo_esc {
             timeout-ms = <20>;
-            key-positions = <31 32 33>;
+            key-positions = <32 33>;
             bindings = <&kp ESC>;
+        };
+        combo_tab {
+            timeout-ms = <20>;
+            key-positions = <33 34>;
+            bindings = <&kp TAB>;
         };
         combo_lgui {
             timeout-ms = <20>;
-            key-positions = <42 43 44>;
+            key-positions = <45 46>;
             bindings = <&kp LGUI>;
         };
         combo_ret {
             timeout-ms = <20>;
-            key-positions = <36 37 38>;
+            key-positions = <36 37>;
             bindings = <&kp RET>;
         };
         combo_bksp {
             timeout-ms = <20>;
-            key-positions = <36 37>;
+            key-positions = <37 38>;
             bindings = <&kp BKSP>;
         };
         combo_del {
             timeout-ms = <20>;
-            key-positions = <37 38>;
+            key-positions = <38 39>;
             bindings = <&kp DEL>;
         };
         combo_rgui {
             timeout-ms = <20>;
-            key-positions = <51 52 53>;
+            key-positions = <49 50>;
             bindings = <&kp RGUI>;
         };
         combo_lctl {
