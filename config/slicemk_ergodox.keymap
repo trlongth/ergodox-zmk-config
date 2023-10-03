@@ -96,6 +96,46 @@
             key-positions = <49 50 51>;
             bindings = <&kp RG(TAB)>;
         };
+        combo_left {
+            timeout-ms = <30>;
+            key-positions = <35 49>;
+            bindings = <&kp LARW>;
+        };
+        combo_down {
+            timeout-ms = <30>;
+            key-positions = <36 50>;
+            bindings = <&kp DARW>;
+        };
+        combo_up {
+            timeout-ms = <30>;
+            key-positions = <37 51>;
+            bindings = <&kp UARW>;
+        };
+        combo_right {
+            timeout-ms = <30>;
+            key-positions = <38 52>;
+            bindings = <&kp RARW>;
+        };
+        combo_home {
+            timeout-ms = <30>;
+            key-positions = <23 35>;
+            bindings = <&kp LARW>;
+        };
+        combo_pgdn {
+            timeout-ms = <30>;
+            key-positions = <24 36>;
+            bindings = <&kp DARW>;
+        };
+        combo_pgup {
+            timeout-ms = <30>;
+            key-positions = <25 37>;
+            bindings = <&kp UARW>;
+        };
+        combo_end {
+            timeout-ms = <30>;
+            key-positions = <26 38>;
+            bindings = <&kp RARW>;
+        };
     };
     behaviors {
         tdl: tap_dance_l {
