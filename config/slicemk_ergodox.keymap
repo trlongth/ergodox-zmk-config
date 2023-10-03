@@ -119,22 +119,22 @@
         combo_home {
             timeout-ms = <30>;
             key-positions = <23 35>;
-            bindings = <&kp LARW>;
+            bindings = <&kp HOME>;
         };
         combo_pgdn {
             timeout-ms = <30>;
             key-positions = <24 36>;
-            bindings = <&kp DARW>;
+            bindings = <&kp PGDN>;
         };
         combo_pgup {
             timeout-ms = <30>;
             key-positions = <25 37>;
-            bindings = <&kp UARW>;
+            bindings = <&kp PGUP>;
         };
         combo_end {
             timeout-ms = <30>;
             key-positions = <26 38>;
-            bindings = <&kp RARW>;
+            bindings = <&kp END>;
         };
     };
     behaviors {
