@@ -56,6 +56,11 @@
             key-positions = <44 45>;
             bindings = <&kp TAB>;
         };
+        combo_lalt_tab {
+            timeout-ms = <30>;
+            key-positions = <43 44 45>;
+            bindings = <&kp LA(TAB)>;
+        };
         combo_lgui {
             timeout-ms = <30>;
             key-positions = <45 46>;
@@ -80,6 +85,11 @@
             timeout-ms = <30>;
             key-positions = <51 52 53>;
             bindings = <&kp RC(RALT)>;
+        };
+        combo_ralt_tab {
+            timeout-ms = <30>;
+            key-positions = <50 51 52>;
+            bindings = <&kp RA(TAB)>;
         };
         combo_rgui {
             timeout-ms = <30>;
