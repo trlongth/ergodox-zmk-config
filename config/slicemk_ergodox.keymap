@@ -66,7 +66,7 @@
             key-positions = <45 46>;
             bindings = <&kp LGUI>;
         };
-        combo_lgui_ltab {
+        combo_lgui_tab {
             timeout-ms = <30>;
             key-positions = <44 45 46>;
             bindings = <&kp LG(TAB)>;
@@ -101,7 +101,7 @@
             key-positions = <50 51>;
             bindings = <&kp TAB>;
         };
-        combo_rgui_rtab {
+        combo_rgui_tab {
             timeout-ms = <30>;
             key-positions = <49 50 51>;
             bindings = <&kp RG(TAB)>;
