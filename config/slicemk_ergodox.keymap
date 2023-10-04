@@ -6,10 +6,35 @@
 / {
     combos {
         compatible = "zmk,combos";
+        combo_bksp {
+            timeout-ms = <30>;
+            key-positions = <37 38>;
+            bindings = <&kp BKSP>;
+        };
+        combo_del {
+            timeout-ms = <30>;
+            key-positions = <38 39>;
+            bindings = <&kp DEL>;
+        };
         combo_spc {
             timeout-ms = <30>;
             key-positions = <34 46>;
             bindings = <&kp SPC>;
+        };
+        combo_ret {
+            timeout-ms = <30>;
+            key-positions = <36 37>;
+            bindings = <&kp RET>;
+        };
+        combo_ltab {
+            timeout-ms = <30>;
+            key-positions = <44 45>;
+            bindings = <&kp TAB>;
+        };
+        combo_rtab {
+            timeout-ms = <30>;
+            key-positions = <50 51>;
+            bindings = <&kp TAB>;
         };
         combo_esc_l {
             timeout-ms = <30>;
@@ -21,90 +46,65 @@
             key-positions = <35 36>;
             bindings = <&kp ESC>;
         };
-        combo_ret {
-            timeout-ms = <30>;
-            key-positions = <36 37>;
-            bindings = <&kp RET>;
-        };
-        combo_bksp {
-            timeout-ms = <30>;
-            key-positions = <37 38>;
-            bindings = <&kp BKSP>;
-        };
-        combo_del {
-            timeout-ms = <30>;
-            key-positions = <38 39>;
-            bindings = <&kp DEL>;
-        };
         combo_lctl {
             timeout-ms = <30>;
             key-positions = <42 43>;
             bindings = <&kp LCTL>;
-        };
-        combo_lalt {
-            timeout-ms = <30>;
-            key-positions = <43 44>;
-            bindings = <&kp LALT>;
-        };
-        combo_lctl_lalt {
-            timeout-ms = <30>;
-            key-positions = <42 43 44>;
-            bindings = <&kp LC(LALT)>;
-        };
-        combo_ltab {
-            timeout-ms = <30>;
-            key-positions = <44 45>;
-            bindings = <&kp TAB>;
-        };
-        combo_lalt_tab {
-            timeout-ms = <30>;
-            key-positions = <43 44 45>;
-            bindings = <&kp LA(TAB)>;
-        };
-        combo_lgui {
-            timeout-ms = <30>;
-            key-positions = <45 46>;
-            bindings = <&kp LGUI>;
-        };
-        combo_lgui_tab {
-            timeout-ms = <30>;
-            key-positions = <44 45 46>;
-            bindings = <&kp LG(TAB)>;
-        };
-        combo_ralt {
-            timeout-ms = <30>;
-            key-positions = <51 52>;
-            bindings = <&kp RALT>;
         };
         combo_rctl {
             timeout-ms = <30>;
             key-positions = <52 53>;
             bindings = <&kp RCTL>;
         };
-        combo_rctl_ralt {
+        combo_lalt {
             timeout-ms = <30>;
-            key-positions = <51 52 53>;
-            bindings = <&kp RC(RALT)>;
+            key-positions = <43 44>;
+            bindings = <&kp LALT>;
         };
-        combo_ralt_tab {
+        combo_ralt {
             timeout-ms = <30>;
-            key-positions = <50 51 52>;
-            bindings = <&kp RA(TAB)>;
+            key-positions = <51 52>;
+            bindings = <&kp RALT>;
+        };
+        combo_lgui {
+            timeout-ms = <30>;
+            key-positions = <45 46>;
+            bindings = <&kp LGUI>;
         };
         combo_rgui {
             timeout-ms = <30>;
             key-positions = <49 50>;
             bindings = <&kp RGUI>;
         };
-        combo_rtab {
+        combo_lctl_lalt {
             timeout-ms = <30>;
-            key-positions = <50 51>;
-            bindings = <&kp TAB>;
+            key-positions = <42 43 44>;
+            bindings = <&kp LC(LALT)>;
+        };
+        combo_rctl_ralt {
+            timeout-ms = <30>;
+            key-positions = <51 52 53>;
+            bindings = <&kp RC(RALT)>;
+        };
+        combo_lalt_tab {
+            timeout-ms = <30>;
+            key-positions = <43 44 45>;
+            bindings = <&kp LA(TAB)>;
+        };
+        combo_ralt_tab {
+            timeout-ms = <30>;
+            key-positions = <50 51 52>;
+            bindings = <&kp RA(TAB)>;
+        };
+        combo_lgui_tab {
+            timeout-ms = <30>;
+            key-positions = <44 45 46>;
+            bindings = <&kp LG(TAB)>;
         };
         combo_rgui_tab {
             timeout-ms = <30>;
             key-positions = <49 50 51>;
-            bindings = <&kp LG(TAB)>;
+            bindings = <&kp RG(TAB)>;
         };
         combo_left {
             timeout-ms = <30>;
