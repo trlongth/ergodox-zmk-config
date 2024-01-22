@@ -168,14 +168,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_L";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&mo 5>, <&mo 8>;
         };
         tdr: tap_dance_r {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_R";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&mo 6>, <&mo 8>, <&mo 9>;
         };
     };
