@@ -8,49 +8,31 @@
         compatible = "zmk,combos";
         combo_del {
             timeout-ms = <35>;
-            key-positions = <38 27>;
+            key-positions = <60 27>;
             bindings = <&kp DEL>;
-            layers = <0 5 6 7 8 9>;
             slow-release;
         };
         combo_bksp {
             timeout-ms = <35>;
-            key-positions = <38 39>;
+            key-positions = <60 26>;
             bindings = <&kp BKSP>;
-            layers = <0 5 6 7 8 9>;
             slow-release;
         };
         combo_ret {
             timeout-ms = <35>;
-            key-positions = <35 36>;
+            key-positions = <60 39>;
             bindings = <&kp RET>;
-            layers = <0 5 6 7 8 9>;
-            slow-release;
-        };
-        combo_spc {
-            timeout-ms = <35>;
-            key-positions = <44 45>;
-            bindings = <&kp SPC>;
-            layers = <0 5 6 7 8 9>;
             slow-release;
         };
         combo_tab {
             timeout-ms = <35>;
-            key-positions = <16 17>;
+            key-positions = <59 17>;
             bindings = <&kp TAB>;
-            layers = <0 5 6 7 8 9>;
             slow-release;
         };
-        combo_esc_l {
+        combo_esc_lower {
             timeout-ms = <35>;
-            key-positions = <33 34>;
-            bindings = <&kp ESC>;
-            layers = <0 5 6 7 8 9>;
-            slow-release;
-        };
-        combo_esc_r {
-            timeout-ms = <35>;
-            key-positions = <36 50>;
+            key-positions = <59 16>;
             bindings = <&kp ESC>;
             layers = <0 5 6 7 8 9>;
             slow-release;
@@ -157,6 +139,12 @@
             bindings = <&kp RG(TAB)>;
             slow-release;
         };
+        combo_func {
+            timeout-ms = <35>;
+            key-positions = <59 30>;
+            bindings = <&mo 5>;
+            slow-release;
+        };
         combo_layers {
             timeout-ms = <35>;
             key-positions = <59 60>;
@@ -169,14 +157,14 @@
             label = "TAP_DANCE_L";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&mo 5>, <&mo 8>;
+            bindings = <&mo 6>, <&mo 5>;
         };
         tdr: tap_dance_r {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_R";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&mo 6>, <&mo 8>, <&mo 9>;
+            bindings = <&mo 7>, <&mo 5>, <&mo 9>;
         };
     };
 };
@@ -190,7 +178,7 @@
 				&bootloader
 				&kp GRAV &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5 &none &none &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &kp BKSP
 				&kp TAB  &kp Q        &kp W        &kp E        &kp R        &kp T        &none &none &kp Y        &kp U        &kp I        &kp O        &kp P        &kp DEL
-				&mo 8    &kp A        &kp S        &kp D        &kp F        &kp G                    &kp H        &kp J        &kp K        &kp L        &kp SEMI     &kp BKSP
+				&mo 5    &kp A        &kp S        &kp D        &kp F        &kp G                    &kp H        &kp J        &kp K        &kp L        &kp SEMI     &kp BKSP
 				&kp LCTL &kp Z        &kp X        &kp C        &kp V        &kp B        &none &none &kp N        &kp M        &kp CMMA     &kp DOT      &kp SQT      &kp RET
 				&kp LCTL &kp LGUI     &kp LCTL     &kp LALT     &tdl                                               &tdr         &kp LCTL     &kp LALT     &kp LGUI     &none
 				                                                             &none        &none &none &none
@@ -204,7 +192,7 @@
 				&bootloader
 				&kp GRAV &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5 &none &none &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &kp BKSP
 				&kp TAB  &kp Q        &kp W        &kp E        &kp R        &kp T        &none &none &kp Y        &kp U        &kp I        &kp O        &kp P        &kp DEL
-				&mo 8    &kp A        &kp S        &kp D        &kp F        &kp G                    &kp H        &kp J        &kp K        &kp L        &kp SEMI     &kp BKSP
+				&mo 5    &kp A        &kp S        &kp D        &kp F        &kp G                    &kp H        &kp J        &kp K        &kp L        &kp SEMI     &kp BKSP
 				&kp LCTL &kp Z        &kp X        &kp C        &kp V        &kp B        &none &none &kp N        &kp M        &kp CMMA     &kp DOT      &kp SQT      &kp RET
 				&kp LCTL &kp LGUI     &kp LCTL     &kp LALT     &tdl                                               &tdr         &kp LCTL     &kp LALT     &kp LGUI     &none
 				                                                             &none        &none &none &none
@@ -218,7 +206,7 @@
 				&bootloader
 				&kp GRAV &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5 &none &none &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &kp BKSP
 				&kp TAB  &kp Q        &kp W        &kp E        &kp R        &kp T        &none &none &kp Y        &kp U        &kp I        &kp O        &kp P        &kp DEL
-				&mo 8    &kp A        &kp S        &kp D        &kp F        &kp G                    &kp H        &kp J        &kp K        &kp L        &kp SEMI     &kp BKSP
+				&mo 5    &kp A        &kp S        &kp D        &kp F        &kp G                    &kp H        &kp J        &kp K        &kp L        &kp SEMI     &kp BKSP
 				&kp LCTL &kp Z        &kp X        &kp C        &kp V        &kp B        &none &none &kp N        &kp M        &kp CMMA     &kp DOT      &kp SQT      &kp RET
 				&kp LCTL &kp LGUI     &kp LCTL     &kp LALT     &tdl                                               &tdr         &kp LCTL     &kp LALT     &kp LGUI     &none
 				                                                             &none        &none &none &none
@@ -232,7 +220,7 @@
 				&bootloader
 				&kp GRAV &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5 &none  &none  &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &kp BKSP
 				&kp TAB  &kp Q        &kp W        &kp UARW     &kp R        &kp T        &trans &trans &kp Y        &kp U        &kp I        &kp O        &kp P        &kp DEL
-				&mo 8    &kp A        &kp LARW     &kp DARW     &kp RARW     &kp G                      &kp H        &kp J        &kp K        &kp L        &kp SEMI     &kp BKSP
+				&mo 5    &kp A        &kp LARW     &kp DARW     &kp RARW     &kp G                      &kp H        &kp J        &kp K        &kp L        &kp SEMI     &kp BKSP
 				&kp LCTL &kp Z        &kp X        &kp C        &kp V        &kp B        &trans &trans &kp N        &kp M        &kp CMMA     &kp DOT      &kp SQT      &kp RET
 				&kp LCTL &kp LGUI     &kp LCTL     &kp LALT     &tdl                                                 &tdr         &kp LCTL     &kp LALT     &kp LGUI     &none
 				                                                             &none        &none  &none  &none
@@ -246,7 +234,7 @@
 				&bootloader
 				&kp GRAV &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5 &none  &none  &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &kp BKSP
 				&kp TAB  &kp Q        &kp W        &kp E        &kp R        &kp T        &trans &trans &kp Y        &kp U        &kp UARW     &kp O        &kp P        &trans
-				&mo 8    &kp A        &kp S        &kp D        &kp F        &kp G                      &kp H        &kp LARW     &kp DARW     &kp RARW     &kp SEMI     &trans
+				&mo 5    &kp A        &kp S        &kp D        &kp F        &kp G                      &kp H        &kp LARW     &kp DARW     &kp RARW     &kp SEMI     &trans
 				&kp LSFT &kp Z        &kp X        &kp C        &kp V        &kp B        &trans &trans &kp N        &kp M        &kp CMMA     &kp DOT      &kp SQT      &kp RET
 				&kp LCTL &kp LGUI     &kp LCTL     &kp LALT     &tdl                                                 &tdr         &kp LCTL     &kp LALT     &kp LGUI     &none
 				                                                             &none        &none  &none  &none
@@ -258,10 +246,24 @@
 		layer_5 {
 			bindings = <
 				&bootloader
+				&trans &kp F11 &kp F12 &kp ESC &kp RET &kp BKSP &trans &trans &trans   &trans   &trans   &trans   &trans   &trans
+				&trans &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans &trans &kp HOME &kp PGDN &kp PGUP &kp END  &kp PRSC &trans
+				&trans &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                 &kp LARW &kp DARW &kp UARW &kp RARW &kp INS  &trans
+				&trans &trans  &trans  &trans  &trans  &trans   &trans &trans &trans   &trans   &trans   &trans   &trans   &trans
+				&trans &trans  &trans  &trans  &trans                                  &trans   &trans   &trans   &trans   &trans
+				                                       &trans   &trans &trans &trans
+				                               &trans  &trans   &trans &trans &trans   &trans
+				                                                &trans &trans
+			>;
+		};
+
+		layer_6 {
+			bindings = <
+				&bootloader
 				&trans &trans       &trans       &trans       &trans       &trans       &trans &trans &trans       &trans       &trans       &trans       &trans       &trans
-				&trans &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &trans &trans &trans       &kp MINUS    &kp EQUAL    &kp UNDER    &kp PLUS     &trans
+				&trans &kp GRAV     &kp TAB      &kp ESC      &kp RET      &kp BKSP     &trans &trans &trans       &kp MINUS    &kp EQUAL    &kp UNDER    &kp PLUS     &trans
 				&trans &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5               &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &trans
-				&trans &kp GRAV     &kp ESC      &kp TAB      &kp RET      &kp BKSP     &trans &trans &kp BSLH     &kp FSLH     &trans       &trans       &trans       &trans
+				&trans &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &trans &trans &kp BSLH     &kp FSLH     &trans       &trans       &trans       &trans
 				&trans &trans       &trans       &trans       &trans                                               &trans       &trans       &trans       &trans       &trans
 				                                                           &trans       &trans &trans &trans
 				                                              &trans       &trans       &trans &trans &trans       &trans
@@ -269,13 +271,13 @@
 			>;
 		};
 
-		layer_6 {
+		layer_7 {
 			bindings = <
 				&bootloader
 				&trans &trans      &trans      &trans      &trans      &trans    &trans &trans &trans    &trans    &trans   &trans   &trans    &trans
-				&trans &kp CARET   &kp AMPS    &kp STAR    &kp LPAR    &kp RPAR  &trans &trans &trans    &kp LBKT  &kp RBKT &kp LBRC &kp RBRC  &trans
+				&trans &kp TILD    &kp LS(TAB) &kp LS(ESC) &kp LS(RET) &kp DEL   &trans &trans &trans    &kp LBKT  &kp RBKT &kp LBRC &kp RBRC  &trans
 				&trans &kp EXCL    &kp AT      &kp POUND   &kp DLLR    &kp PRCNT               &kp CARET &kp AMPS  &kp STAR &kp LPAR &kp RPAR  &trans
-				&trans &kp TILD    &kp LS(ESC) &kp LS(TAB) &kp LS(RET) &kp DEL   &trans &trans &kp PIPE  &kp QMARK &trans   &trans   &trans    &trans
+				&trans &kp CARET   &kp AMPS    &kp STAR    &kp LPAR    &kp RPAR  &trans &trans &kp PIPE  &kp QMARK &trans   &trans   &trans    &trans
 				&trans &trans      &trans      &trans      &trans                                        &trans    &trans   &trans   &trans    &trans
 				                                                       &trans    &trans &trans &trans
 				                                           &trans      &trans    &trans &trans &trans    &trans
@@ -283,31 +285,17 @@
 			>;
 		};
 
-		layer_7 {
+		layer_8 {
 			bindings = <
 				&bootloader
 				&trans &trans      &trans   &trans   &trans   &trans   &trans &trans &trans          &trans    &trans       &trans     &trans       &trans
 				&trans &kp KP_NLCK &kp HOME &kp UARW &kp END  &kp PGUP &trans &trans &kp KP_MULTIPLY &kp KP_N7 &kp KP_N8    &kp KP_N9  &kp KP_PLUS  &trans
 				&trans &kp CLCK    &kp LARW &kp DARW &kp RARW &kp PGDN               &kp KP_DIVIDE   &kp KP_N4 &kp KP_N5    &kp KP_N6  &kp KP_MINUS &trans
-				&trans &kp DEL     &kp ESC  &kp TAB  &kp RET  &kp BKSP &trans &trans &kp KP_N0       &kp KP_N1 &kp KP_N2    &kp KP_N3  &kp KP_EQUAL &kp KP_ENTER
+				&trans &kp DEL     &kp TAB  &kp ESC  &kp RET  &kp BKSP &trans &trans &kp KP_N0       &kp KP_N1 &kp KP_N2    &kp KP_N3  &kp KP_EQUAL &kp KP_ENTER
 				&trans &trans      &trans   &trans   &trans                                          &trans    &kp KP_COMMA &kp KP_DOT &trans       &trans
 				                                              &trans   &trans &trans &trans
 				                                     &trans   &trans   &trans &trans &trans          &trans
 				                                                       &trans &trans
-			>;
-		};
-
-		layer_8 {
-			bindings = <
-				&bootloader
-				&trans &trans  &trans  &trans  &trans  &trans   &trans &trans &trans   &trans   &trans   &trans   &trans   &trans
-				&trans &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans &trans &kp HOME &kp PGDN &kp PGUP &kp END  &kp PRSC &trans
-				&trans &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                 &kp LARW &kp DARW &kp UARW &kp RARW &kp INS  &trans
-				&trans &kp F11 &kp F12 &kp TAB &kp RET &kp BKSP &trans &trans &trans   &trans   &trans   &trans   &trans   &trans
-				&trans &trans  &trans  &trans  &trans                                  &trans   &trans   &trans   &trans   &trans
-				                                       &trans   &trans &trans &trans
-				                               &trans  &trans   &trans &trans &trans   &trans
-				                                                &trans &trans
 			>;
 		};
 
