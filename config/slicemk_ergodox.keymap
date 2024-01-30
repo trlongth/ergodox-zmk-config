@@ -6,35 +6,82 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_del {
+        combo_func {
             timeout-ms = <35>;
-            key-positions = <60 27>;
-            bindings = <&kp DEL>;
+            key-positions = <59 30>;
+            bindings = <&mo 5>;
             slow-release;
         };
-        combo_bksp {
+        combo_tab_lower {
             timeout-ms = <35>;
-            key-positions = <60 26>;
-            bindings = <&kp BKSP>;
-            slow-release;
-        };
-        combo_ret {
-            timeout-ms = <35>;
-            key-positions = <60 39>;
-            bindings = <&kp RET>;
-            slow-release;
-        };
-        combo_tab {
-            timeout-ms = <35>;
-            key-positions = <59 17>;
+            key-positions = <59 31>;
             bindings = <&kp TAB>;
             slow-release;
         };
         combo_esc_lower {
             timeout-ms = <35>;
-            key-positions = <59 16>;
+            key-positions = <59 32>;
             bindings = <&kp ESC>;
-            layers = <0 5 6 7 8 9>;
+            slow-release;
+        };
+        combo_ret_lower {
+            timeout-ms = <35>;
+            key-positions = <59 33>;
+            bindings = <&kp RET>;
+            slow-release;
+        };
+        combo_spc_lower {
+            timeout-ms = <35>;
+            key-positions = <59 34>;
+            bindings = <&kp RET>;
+            slow-release;
+        };
+        combo_lctl_lower {
+            timeout-ms = <35>;
+            key-positions = <59 42>;
+            bindings = <&kp LCTL>;
+            slow-release;
+        };
+        combo_lgui_lower {
+            timeout-ms = <35>;
+            key-positions = <46 59>;
+            bindings = <&kp LGUI>;
+            slow-release;
+        };
+        combo_ret_raise {
+            timeout-ms = <35>;
+            key-positions = <60 36>;
+            bindings = <&kp RET>;
+            slow-release;
+        };
+        combo_esc_raise {
+            timeout-ms = <35>;
+            key-positions = <60 37>;
+            bindings = <&kp BKSP>;
+            slow-release;
+        };
+        combo_bksp_raise {
+            timeout-ms = <35>;
+            key-positions = <60 38>;
+            bindings = <&kp BKSP>;
+            slow-release;
+        };
+        combo_del_raise {
+            timeout-ms = <35>;
+            key-positions = <60 39>;
+            bindings = <&kp DEL>;
+            slow-release;
+        };
+        combo_rctl_raise {
+            timeout-ms = <35>;
+            key-positions = <60 53>;
+            bindings = <&kp RCTL>;
+            slow-release;
+        };
+        combo_rgui_raise {
+            timeout-ms = <35>;
+            key-positions = <49 60>;
+            bindings = <&kp RGUI>;
             slow-release;
         };
         combo_lctl {
@@ -44,23 +91,11 @@
             layers = <0 5 6 7 8 9>;
             slow-release;
         };
-        combo_lctl_lower {
-            timeout-ms = <35>;
-            key-positions = <42 59>;
-            bindings = <&kp LCTL>;
-            slow-release;
-        };
         combo_rctl {
             timeout-ms = <35>;
             key-positions = <52 53>;
             bindings = <&kp RCTL>;
             layers = <0 5 6 7 8 9>;
-            slow-release;
-        };
-        combo_rctl_raise {
-            timeout-ms = <35>;
-            key-positions = <53 60>;
-            bindings = <&kp RCTL>;
             slow-release;
         };
         combo_lalt {
@@ -84,23 +119,11 @@
             layers = <0 5 6 7 8 9>;
             slow-release;
         };
-        combo_lgui_lower {
-            timeout-ms = <35>;
-            key-positions = <46 59>;
-            bindings = <&kp LGUI>;
-            slow-release;
-        };
         combo_rgui {
             timeout-ms = <35>;
             key-positions = <49 50>;
             bindings = <&kp RGUI>;
             layers = <0 5 6 7 8 9>;
-            slow-release;
-        };
-        combo_rgui_raise {
-            timeout-ms = <35>;
-            key-positions = <49 60>;
-            bindings = <&kp RGUI>;
             slow-release;
         };
         combo_lctl_lalt {
@@ -137,12 +160,6 @@
             timeout-ms = <35>;
             key-positions = <49 50 51>;
             bindings = <&kp RG(TAB)>;
-            slow-release;
-        };
-        combo_func {
-            timeout-ms = <35>;
-            key-positions = <59 30>;
-            bindings = <&mo 5>;
             slow-release;
         };
         combo_layers {
@@ -317,9 +334,9 @@
 			bindings = <
 				&bootloader
 				&none &none &none &none &none &none  &none &none &none &none &none &none &none &none
-				&none &to 6 &to 7 &to 8 &to 9 &to 10 &none &none &none &none &none &none &none &none
-				&none &to 1 &to 2 &to 3 &to 4 &to 5              &none &none &none &none &none &none
 				&none &none &none &none &none &none  &none &none &none &none &none &none &none &none
+				&none &to 1 &to 2 &to 3 &to 4 &to 5              &none &none &none &none &none &none
+				&none &to 6 &to 7 &to 8 &to 9 &to 10 &none &none &none &none &none &none &none &none
 				&none &none &none &none &none                          &none &none &none &none &none
 				                              &none  &none &none &none
 				                        &to 0 &none  &none &none &none &none
