@@ -263,10 +263,10 @@
 		layer_5 {
 			bindings = <
 				&bootloader
-				&trans &kp F11 &kp F12 &kp ESC &kp RET &kp BKSP &trans &trans &trans   &trans   &trans   &trans   &trans   &trans
-				&trans &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans &trans &kp HOME &kp PGDN &kp PGUP &kp END  &kp PRSC &trans
-				&trans &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                 &kp LARW &kp DARW &kp UARW &kp RARW &kp INS  &trans
 				&trans &trans  &trans  &trans  &trans  &trans   &trans &trans &trans   &trans   &trans   &trans   &trans   &trans
+				&trans &kp F11 &kp F12 &kp ESC &kp RET &kp BKSP &trans &trans &kp HOME &kp PGDN &kp PGUP &kp END  &kp PRSC &trans
+				&trans &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                 &kp LARW &kp DARW &kp UARW &kp RARW &kp INS  &trans
+				&trans &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans &trans &trans   &trans   &trans   &trans   &trans   &trans
 				&trans &trans  &trans  &trans  &trans                                  &trans   &trans   &trans   &trans   &trans
 				                                       &trans   &trans &trans &trans
 				                               &trans  &trans   &trans &trans &trans   &trans
