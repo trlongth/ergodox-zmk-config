@@ -18,6 +18,13 @@
             bindings = <&kp TAB>;
             slow-release;
         };
+        combo_ltab {
+            timeout-ms = <35>;
+            key-positions = <16 17>;
+            bindings = <&kp TAB>;
+            layers = <0 5 6 7 8 9>;
+            slow-release;
+        };
         combo_esc_lower {
             timeout-ms = <35>;
             key-positions = <59 32>;
@@ -33,7 +40,7 @@
         combo_spc_lower {
             timeout-ms = <35>;
             key-positions = <59 34>;
-            bindings = <&kp RET>;
+            bindings = <&kp SPC>;
             slow-release;
         };
         combo_lctl_lower {
@@ -54,10 +61,24 @@
             bindings = <&kp RET>;
             slow-release;
         };
+        combo_rret {
+            timeout-ms = <35>;
+            key-positions = <36 37>;
+            bindings = <&kp RET>;
+            layers = <0 5 6 7 8 9>;
+            slow-release;
+        };
         combo_esc_raise {
             timeout-ms = <35>;
             key-positions = <60 37>;
-            bindings = <&kp BKSP>;
+            bindings = <&kp ESC>;
+            slow-release;
+        };
+        combo_resc {
+            timeout-ms = <35>;
+            key-positions = <35 36>;
+            bindings = <&kp ESC>;
+            layers = <0 5 6 7 8 9>;
             slow-release;
         };
         combo_bksp_raise {
@@ -66,10 +87,24 @@
             bindings = <&kp BKSP>;
             slow-release;
         };
+        combo_rbksp {
+            timeout-ms = <35>;
+            key-positions = <37 38>;
+            bindings = <&kp BKSP>;
+            layers = <0 5 6 7 8 9>;
+            slow-release;
+        };
         combo_del_raise {
             timeout-ms = <35>;
             key-positions = <60 39>;
             bindings = <&kp DEL>;
+            slow-release;
+        };
+        combo_rdel {
+            timeout-ms = <35>;
+            key-positions = <38 39>;
+            bindings = <&kp DEL>;
+            layers = <0 5 6 7 8 9>;
             slow-release;
         };
         combo_rctl_raise {
