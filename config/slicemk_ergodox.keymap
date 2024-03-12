@@ -76,7 +76,7 @@
         };
         combo_resc {
             timeout-ms = <35>;
-            key-positions = <35 36>;
+            key-positions = <35 50>;
             bindings = <&kp ESC>;
             layers = <0 5 6 7 8 9>;
             slow-release;
@@ -89,7 +89,7 @@
         };
         combo_rbksp {
             timeout-ms = <35>;
-            key-positions = <37 38>;
+            key-positions = <35 36>;
             bindings = <&kp BKSP>;
             layers = <0 5 6 7 8 9>;
             slow-release;
@@ -102,7 +102,7 @@
         };
         combo_rdel {
             timeout-ms = <35>;
-            key-positions = <38 39>;
+            key-positions = <50 51>;
             bindings = <&kp DEL>;
             layers = <0 5 6 7 8 9>;
             slow-release;
