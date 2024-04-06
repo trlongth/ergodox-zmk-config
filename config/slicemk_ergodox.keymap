@@ -18,6 +18,13 @@
             bindings = <&kp TAB>;
             slow-release;
         };
+        combo_ltab {
+            timeout-ms = <35>;
+            key-positions = <16 17>;
+            bindings = <&kp TAB>;
+            layers = <0 5 6 7 8 9>;
+            slow-release;
+        };
         combo_esc_lower {
             timeout-ms = <35>;
             key-positions = <59 32>;
@@ -54,10 +61,24 @@
             bindings = <&kp RET>;
             slow-release;
         };
+        combo_rret {
+            timeout-ms = <35>;
+            key-positions = <36 37>;
+            bindings = <&kp RET>;
+            layers = <0 5 6 7 8 9>;
+            slow-release;
+        };
         combo_esc_raise {
             timeout-ms = <35>;
             key-positions = <60 37>;
             bindings = <&kp ESC>;
+            slow-release;
+        };
+        combo_resc {
+            timeout-ms = <35>;
+            key-positions = <35 50>;
+            bindings = <&kp ESC>;
+            layers = <0 5 6 7 8 9>;
             slow-release;
         };
         combo_bksp_raise {
@@ -66,10 +87,24 @@
             bindings = <&kp BKSP>;
             slow-release;
         };
+        combo_rbksp {
+            timeout-ms = <35>;
+            key-positions = <35 36>;
+            bindings = <&kp BKSP>;
+            layers = <0 5 6 7 8 9>;
+            slow-release;
+        };
         combo_del_raise {
             timeout-ms = <35>;
             key-positions = <60 39>;
             bindings = <&kp DEL>;
+            slow-release;
+        };
+        combo_rdel {
+            timeout-ms = <35>;
+            key-positions = <50 51>;
+            bindings = <&kp DEL>;
+            layers = <0 5 6 7 8 9>;
             slow-release;
         };
         combo_rctl_raise {
@@ -269,10 +304,10 @@
 		layer_5 {
 			bindings = <
 				&bootloader
-				&trans &kp F11 &kp F12 &kp ESC &kp RET &kp BKSP &trans &trans &trans   &trans   &trans   &trans   &trans   &trans
-				&trans &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans &trans &kp HOME &kp PGDN &kp PGUP &kp END  &kp PRSC &trans
-				&trans &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                 &kp LARW &kp DARW &kp UARW &kp RARW &kp INS  &trans
 				&trans &trans  &trans  &trans  &trans  &trans   &trans &trans &trans   &trans   &trans   &trans   &trans   &trans
+				&trans &kp F11 &kp F12 &kp ESC &kp RET &kp BKSP &trans &trans &kp HOME &kp PGDN &kp PGUP &kp END  &kp PRSC &trans
+				&trans &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                 &kp LARW &kp DARW &kp UARW &kp RARW &kp INS  &trans
+				&trans &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans &trans &trans   &trans   &trans   &trans   &trans   &trans
 				&trans &trans  &trans  &trans  &trans                                  &trans   &trans   &trans   &trans   &trans
 				                                       &trans   &trans &trans &trans
 				                               &trans  &trans   &trans &trans &trans   &trans
