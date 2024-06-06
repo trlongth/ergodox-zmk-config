@@ -17,13 +17,13 @@
             key-positions = <20 34>;
             bindings = <&kp TAB>;
             slow-release;
-        }
+        };
         combo_rshift_tab {
             timeout-ms = <35>;
             key-positions = <23 35>;
             bindings = <&kp RS(TAB)>;
             slow-release;
-        }
+        };
         combo_tab_lower {
             timeout-ms = <35>;
             key-positions = <59 31>;
