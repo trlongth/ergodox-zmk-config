@@ -93,7 +93,7 @@
         combo_rgui_raise {
             timeout-ms = <35>;
             key-positions = <50 60>;
-            bindings = <&kp RGUI>;
+            bindings = <&kp RS(RGUI)>;
             slow-release;
         };
         combo_ralt {
@@ -112,7 +112,7 @@
         combo_rgui {
             timeout-ms = <35>;
             key-positions = <49 50>;
-            bindings = <&kp RGUI>;
+            bindings = <&kp RS(RGUI)>;
             layers = <0 6 7 8 9>;
             slow-release;
         };
