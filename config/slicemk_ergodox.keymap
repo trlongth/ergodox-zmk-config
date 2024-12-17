@@ -12,42 +12,6 @@
             bindings = <&mo 5>;
             slow-release;
         };
-        combo_tab {
-            timeout-ms = <35>;
-            key-positions = <20 34>;
-            bindings = <&kp TAB>;
-            slow-release;
-        };
-        combo_rshift_tab {
-            timeout-ms = <35>;
-            key-positions = <23 35>;
-            bindings = <&kp RS(TAB)>;
-            slow-release;
-        };
-        combo_tab_lower {
-            timeout-ms = <35>;
-            key-positions = <59 31>;
-            bindings = <&kp TAB>;
-            slow-release;
-        };
-        combo_esc_lower {
-            timeout-ms = <35>;
-            key-positions = <59 32>;
-            bindings = <&kp ESC>;
-            slow-release;
-        };
-        combo_ret_lower {
-            timeout-ms = <35>;
-            key-positions = <59 33>;
-            bindings = <&kp RET>;
-            slow-release;
-        };
-        combo_spc_lower {
-            timeout-ms = <35>;
-            key-positions = <59 34>;
-            bindings = <&kp SPC>;
-            slow-release;
-        };
         combo_lctl_lower {
             timeout-ms = <35>;
             key-positions = <59 42>;
@@ -86,13 +50,13 @@
         };
         combo_lgui_lower {
             timeout-ms = <35>;
-            key-positions = <45 59>;
+            key-positions = <46 59>;
             bindings = <&kp LGUI>;
             slow-release;
         };
         combo_rgui_raise {
             timeout-ms = <35>;
-            key-positions = <50 60>;
+            key-positions = <49 60>;
             bindings = <&kp RS(RGUI)>;
             slow-release;
         };
@@ -272,7 +236,7 @@
 			bindings = <
 				&bootloader
 				&trans &trans  &trans  &trans  &trans  &trans   &trans &trans &trans   &trans   &trans   &trans   &trans   &trans
-				&trans &kp F11 &kp F12 &kp ESC &kp RET &kp BKSP &trans &trans &kp HOME &kp PGDN &kp PGUP &kp END  &kp PRSC &trans
+				&trans &kp F11 &kp F12 &kp F13 &kp F14 &kp F15  &trans &trans &kp HOME &kp PGDN &kp PGUP &kp END  &kp PRSC &trans
 				&trans &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                 &kp LARW &kp DARW &kp UARW &kp RARW &kp INS  &trans
 				&trans &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans &trans &trans   &trans   &trans   &trans   &trans   &trans
 				&trans &trans  &trans  &trans  &trans                                  &trans   &trans   &trans   &trans   &trans
@@ -286,7 +250,7 @@
 			bindings = <
 				&bootloader
 				&trans &trans       &trans       &trans       &trans       &trans       &trans &trans &trans       &trans       &trans       &trans       &trans       &trans
-				&trans &kp GRAV     &kp TAB      &kp ESC      &kp RET      &kp BKSP     &trans &trans &trans       &kp MINUS    &kp EQUAL    &kp UNDER    &kp PLUS     &trans
+				&trans &kp ESC      &kp TAB      &kp MINUS    &kp EQUAL    &kp GRAV     &trans &trans &kp LS(ESC)  &kp LS(TAB)  &trans       &trans       &trans       &trans
 				&trans &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5               &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &trans
 				&trans &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0 &trans &trans &kp BSLH     &kp SEMI     &trans       &trans       &trans       &trans
 				&trans &trans       &trans       &trans       &trans                                               &trans       &trans       &trans       &trans       &trans
@@ -300,7 +264,7 @@
 			bindings = <
 				&bootloader
 				&trans &trans      &trans      &trans      &trans      &trans    &trans &trans &trans    &trans    &trans   &trans   &trans    &trans
-				&trans &kp TILD    &kp LS(TAB) &kp LS(ESC) &kp LS(RET) &kp DEL   &trans &trans &trans    &kp LBKT  &kp RBKT &kp LBRC &kp RBRC  &trans
+				&trans &kp LS(ESC) &kp LS(TAB) &kp UNDER   &kp PLUS    &kp TILD  &trans &trans &trans    &kp LBKT  &kp RBKT &kp LBRC &kp RBRC  &trans
 				&trans &kp EXCL    &kp AT      &kp POUND   &kp DLLR    &kp PRCNT               &kp CARET &kp AMPS  &kp STAR &kp LPAR &kp RPAR  &trans
 				&trans &kp CARET   &kp AMPS    &kp STAR    &kp LPAR    &kp RPAR  &trans &trans &kp PIPE  &kp COLON &trans   &trans   &trans    &trans
 				&trans &trans      &trans      &trans      &trans                                        &trans    &trans   &trans   &trans    &trans
@@ -316,7 +280,7 @@
 				&trans &trans      &trans   &trans   &trans   &trans   &trans &trans &trans          &trans    &trans       &trans     &trans       &trans
 				&trans &kp KP_NLCK &kp HOME &kp UARW &kp END  &kp PGUP &trans &trans &kp KP_MULTIPLY &kp KP_N7 &kp KP_N8    &kp KP_N9  &kp KP_PLUS  &trans
 				&trans &kp CLCK    &kp LARW &kp DARW &kp RARW &kp PGDN               &kp KP_DIVIDE   &kp KP_N4 &kp KP_N5    &kp KP_N6  &kp KP_MINUS &trans
-				&trans &kp DEL     &kp TAB  &kp ESC  &kp RET  &kp BKSP &trans &trans &kp KP_N0       &kp KP_N1 &kp KP_N2    &kp KP_N3  &kp KP_EQUAL &kp KP_ENTER
+				&trans &kp ESC     &kp TAB  &kp RET  &kp DEL  &kp BKSP &trans &trans &kp KP_N0       &kp KP_N1 &kp KP_N2    &kp KP_N3  &kp KP_EQUAL &kp KP_ENTER
 				&trans &trans      &trans   &trans   &trans                                          &trans    &kp KP_COMMA &kp KP_DOT &trans       &trans
 				                                              &trans   &trans &trans &trans
 				                                     &trans   &trans   &trans &trans &trans          &trans
